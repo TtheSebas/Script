@@ -14,7 +14,6 @@ while true; do
     echo "Tú elegiste: $usuario_op"
     echo "La PC eligió: $pc_op"
 
-    # Lógica de comparación 
     if [ "$usuario_op" == "$pc_op" ]; then
         echo "¡Es un empate!"
     elif [[ ("$usuario_op" == "piedra" && "$pc_op" == "tijera") || 
