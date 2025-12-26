@@ -1,0 +1,35 @@
+#!/bin/bash
+resultado=0
+primera_vez=true
+
+while true; do
+    if [ "$primera_vez" = true ]; then
+        read -p "Ingrese primer número: " n1
+        primera_vez=false
+    else
+        n1=$resultado
+        echo "Usando resultado anterior: $n1"
+    fi
+
+    read -p "Ingrese segundo número: " n2
+    echo "Operación: suma (+), resta (-), mult (*), div (/)"
+    read op
+
+    case $op in
+        "+") let resultado=$n1+$n2 ;; 
+        "-") let resultado=$n1-$n2 ;;
+        "*") let resultado=$n1*$n2 ;;
+        "/") 
+            if [ $n2 -eq 0 ]; then 
+                echo "Error: División por cero"
+                resultado=$n1
+            else
+                resultado=$(echo "scale=2; $n1/$n2" | bc) 
+            fi
+            ;;
+    esac
+
+    echo "Resultado: $resultado"
+    echo "Esperando 30 segundos para la siguiente operación..."
+    sleep 30 
+done
