@@ -1,0 +1,27 @@
+#!/bin/bash
+function gestionar_archivos() {
+    echo "1. Crear Directorio" 
+    echo "2. Crear Archivo" 
+    echo "3. Borrar Archivo" 
+    echo "4. Listar Directorio" 
+    echo "5. Buscar Archivo" 
+    echo "6. Limpiar Pantalla" 
+    echo "7. Salir"
+    read -p "Seleccione opción: " opt
+
+    case $opt in
+        1) read -p "Ruta y nombre directorio: " r; mkdir -p "$r" ;; 
+        2) read -p "Ruta y nombre archivo: " r; touch "$r" ;; 
+        3) read -p "Ruta y nombre a borrar: " r; rm "$r" ;;
+        4) read -p "Ruta a listar: " r; ls "$r" ;;
+        5) read -p "Nombre de archivo a buscar: " n; find / -name "$n" 2>/dev/null ;;
+        6) clear ;;
+        7) exit 0 ;;
+    esac
+}
+
+while true; do
+    gestionar_archivos 
+    echo "Menú aparecerá de nuevo en 10 minutos..."
+    sleep 600 # 10 minutos 
+done
