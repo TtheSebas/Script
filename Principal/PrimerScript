@@ -1,5 +1,4 @@
 #!/bin/bash
-# Script de juego ejecutado cada 5 minutos 
 
 while true; do
     clear
@@ -7,7 +6,7 @@ while true; do
     echo "Elige una opción: (1) piedra, (2) papel, (3) tijera"
     read -p "Opción: " usuario_op
 
-    # Selección aleatoria de la PC [cite: 306]
+    # Selección aleatoria de la PC 
     opciones=("piedra" "papel" "tijera")
     pc_num=$(( $RANDOM % 3 ))
     pc_op=${opciones[$pc_num]}
@@ -15,7 +14,7 @@ while true; do
     echo "Tú elegiste: $usuario_op"
     echo "La PC eligió: $pc_op"
 
-    # Lógica de comparación [cite: 306]
+    # Lógica de comparación 
     if [ "$usuario_op" == "$pc_op" ]; then
         echo "¡Es un empate!"
     elif [[ ("$usuario_op" == "piedra" && "$pc_op" == "tijera") || 
@@ -27,5 +26,5 @@ while true; do
     fi
 
     echo "Próxima partida en 5 minutos..."
-    sleep 300 # 5 minutos 
+    sleep 300 
 done
