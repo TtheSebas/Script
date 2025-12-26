@@ -1,22 +1,22 @@
 # Práctica 9: Programación de Scripts en Bash Shell
 
-[cite_start]**Institución:** Escuela Politécnica Nacional 
-[cite_start]**Facultad:** Ingeniería en Sistemas   
-[cite_start]**Materia:** Laboratorio de Sistemas Operativos 
-[cite_start]**Semestre:** 2023-A 
-[cite_start]**Tema:** Scripts en Linux 
+**Institución:** Escuela Politécnica Nacional 
+**Facultad:** Ingeniería en Sistemas   
+**Materia:** Laboratorio de Sistemas Operativos 
+**Semestre:** 2025-B 
+**Tema:** Scripts en Linux 
 
-## 📋 Descripción General
-Este repositorio contiene el desarrollo de la Guía de Laboratorio N°9. [cite_start]El objetivo es la creación y ejecución de scripts en el Shell de Linux (Bash), implementando variables, control de flujo, bucles, arreglos y funciones.
+##  Descripción General
+Este repositorio contiene el desarrollo de la Guía de Laboratorio N°9.El objetivo es la creación y ejecución de scripts en el Shell de Linux (Bash), implementando variables, control de flujo, bucles, arreglos y funciones.
 
-## 📂 Contenido del Proyecto
+##  Contenido del Proyecto
 
 ### 1. Scripts de Procedimiento (Ejercicios Complejos)
-[cite_start]Estos scripts corresponden a la sección 3 de la guía y resuelven problemas específicos mediante tareas programadas.
+Estos scripts corresponden a la sección 3 de la guía y resuelven problemas específicos mediante tareas programadas.
 
 * **`juego.sh` (Piedra, Papel o Tijera):**
     * Script interactivo que compite contra la PC seleccionando una opción aleatoria.
-    * [cite_start]Se ejecuta en un bucle infinito con una pausa de 5 minutos entre partidas.
+    * Se ejecuta en un bucle infinito con una pausa de 5 minutos entre partidas.
     * *Uso:* Seleccionar opción (1, 2 o 3) y ver el resultado.
 
 * **`calculadora.sh` (Calculadora Iterativa):**
@@ -39,9 +39,9 @@ Este repositorio contiene el desarrollo de la Guía de Laboratorio N°9. [cite_s
 * **Bucles:** `myloop.sh` (Fig. 11 - while), `for.sh` (Fig. 12), `until.sh` (Fig. 13), `select.sh` (Fig. 14).
 * **Funciones:** `funcion.sh` (Fig. 15).
 
-## 🚀 Instrucciones de Ejecución
+## Instrucciones de Ejecución
 
-[cite_start]Para ejecutar cualquiera de los scripts contenidos en este repositorio, es necesario otorgar permisos de ejecución previamente.
+Para ejecutar cualquiera de los scripts contenidos en este repositorio, es necesario otorgar permisos de ejecución previamente.
 
 1.  **Dar permisos a todos los scripts:**
     ```bash
